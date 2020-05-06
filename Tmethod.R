@@ -21,8 +21,8 @@ for(sim in 1:SimTime){
   y.signal <- as.matrix(y.train[-no.unit])  # y signal
   X.unit <- t(as.matrix(X.train[no.unit,])) # X unit
   y.unit <- as.matrix(y.train[no.unit])     # y unit
-  X.norm <- t(apply(X.signal, 1, function(X) {return(X-X.unit)}))
-  y.norm <- as.matrix(apply(y.signal, 1, function(y) {return(y-y.unit)}))
+  X.norm <- sweep(X.signal, 2, X.unit)      # X normalized
+  y.norm <- sweep(y.signal, 2, y.unit)      # y normalized
   ##### Step2: Calculation of beta and eta for each item #####
   r <- as.numeric(t(y.norm) %*% y.norm) # effective divisor
   Beta <- t(t(X.norm) %*% y.norm) / r
