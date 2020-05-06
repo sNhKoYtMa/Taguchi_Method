@@ -34,7 +34,7 @@ for(sim in 1:SimTime){
   eta[eta<0] <- 0
   ##### Step3: Calculation of an integrated estimated output value for each signal member #####
   ##### Step4: Calculation of the previously normalized overall estimated output value #####
-  X.test.norm <- t(apply(X.test, 1, function(X) {return(X-X.unit)}))
+  X.test.norm <- sweep(X.test, 2, X.unit)
   y.train.hat <- as.matrix(apply(X.norm, 1, function(X) {
     return(sum((eta/sum(eta))*X/Beta)+y.unit)}))
   y.test.hat <- as.matrix(apply(X.test.norm, 1, function(X) {
