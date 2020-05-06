@@ -12,7 +12,7 @@ for(sim in 1:SimTime){
   ##### parameter set #####
   source('parameter_Tamethod.R')
   #=========================================================#
-  ##### T-method calculation #####
+  ##### Ta-method calculation #####
   #=========================================================#
   ##### Step1: Determination of unit space #####
   y.train <- as.matrix(y.train)
@@ -43,7 +43,7 @@ for(sim in 1:SimTime){
   PE[sim] <- mean(error.test**2) # PE
   ERSS[sim] <- mean(error.train**2) # ERSS
   #=========================================================#
-  ##### T-method END #####
+  ##### Ta-method END #####
   #=========================================================#
   i.time <- sim
   cat('\n',i.time,'/',n.time)
