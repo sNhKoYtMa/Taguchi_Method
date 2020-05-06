@@ -13,4 +13,5 @@
 Hastie,T., Tibshirani,R. and Friedman,J.(2009): The Elements of Statistical Learning, Springer.<br>
 稲生淳紀, 永田靖, 堀田慶介, 森有紗(2012): タグチのT法およびその改良手法と重回帰分析の性能比較, 品質, Vol.42, No.2, pp.103-115.<br>
 永田靖, 棟近雅彦(2001):『多変量解析法入門』, サイエンス社.<br>
+田口玄一(2005): 目的機能と基本機能(6), 品質工学, Vol.13, No.3, pp.5-10.<br>
 立林和夫, 手島昌一, 長谷川良子(2008):『入門MTシステム』, 日科技連出版社.<br>
