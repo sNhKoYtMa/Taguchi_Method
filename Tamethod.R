@@ -23,7 +23,7 @@ for(sim in 1:SimTime){
   ##### Step2: Calculation of beta and eta for each item #####
   r <- as.numeric(t(y.norm) %*% y.norm) # effective divisor
   Beta <- t(t(X.norm) %*% y.norm) / r
-  ST <- t(as.matrix(diag(t(X.norm) %*% X.norm)))
+  ST <- t(diag(t(X.norm) %*% X.norm))
   SB <- t((t(X.norm) %*% y.norm)) ** 2 / r
   SE <- ST - SB
   VE <- SE / train.size
