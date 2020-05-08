@@ -3,7 +3,7 @@
 # MSR(Multiple Single Regression) main code
 #=========================================================#
 ##### run only first time #####
-# Result <- matrix(NA,10,7) ; out <- 1
+Result <- matrix(NA,10,7) ; out <- 1
 ##### setting #####
 source('data_artificial_linear.R') # data selection
 delta <- 0.01 # residual threshold delta
